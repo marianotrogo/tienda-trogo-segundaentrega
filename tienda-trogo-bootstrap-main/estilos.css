@@ -80,6 +80,9 @@ a{
 .main{
     grid-area: main;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
 .main_text{
@@ -92,18 +95,24 @@ a{
     width: 100%;
     height: 100%;
 }
-
+.portada{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
 .cuidados{
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 10px;
-    background: linear-gradient(#f19b9b, #875d5d);
+    background: rgb(180,52,158);
+background: linear-gradient(4deg, rgba(180,52,158,1) 0%, rgba(92,12,78,1) 100%, rgba(194,47,131,1) 100%);
     border-radius: 30px;
 }
 
 .nosotros{
-    background: linear-gradient(#f19b9b, #875d5d);
+    background: rgb(180,52,158);
+background: linear-gradient(4deg, rgba(180,52,158,1) 0%, rgba(92,12,78,1) 100%, rgba(194,47,131,1) 100%);
     border-radius: 30px;
 }
 /* -----------Footer--------------- */
@@ -149,10 +158,12 @@ a{
 /* ---------PRODUCTOS------------ */
 .main_productos{
     display: grid;
+    
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,1fr);
     gap: 10px;
     border-bottom: 3px dotted #eee;
+
 }
 
 .img_prod{
@@ -160,17 +171,11 @@ a{
     height: 300px;
     border: 1px solid #eee;
     border-radius: 20px;
-}
-
-.img_prod:hover{
-    width: 320px;
-    height: 320px;
-    transition: all .5s;
-    position: relative;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.37);  
 }
 
 .price{
-    color: #2d2b2b;
+    color: #2d2b2b; 
 }
 
 /* ---------Formulario---------- */
